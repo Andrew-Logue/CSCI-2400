@@ -1,0 +1,21 @@
+int func4(rdi, rsi, rdx, rcx){
+    rdx = rcx;
+    rsi -= rcx;
+    rcx == rcx >> 1;
+    rsi += rcx;
+
+    if (rcx > rdi) { //unsigned
+        func4(rdi, rsi, rcx - 1, rcx);
+        return 2 * rax;
+    }
+    else{
+        rax = 0;
+        if (rcx < rdi){ //unsigned
+            func4(rdi, rcx + 1, rdx, rcx);
+            return 1 + (2 * rax);
+        }
+        else {
+            return rax;
+        }
+    }
+}
